@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Wifi password checker</title>
+  <link rel="stylesheet" href="./stylesheet.css">
+</head>
+
+<body>
+  <div class="form">
+    <div class="title">WiFi password checker</div>
+    <div class="subtitle">Enter your SSID(WiFi name) & hostname of your windows de device to show your WiFipassword. Not
+      sure about your hostname? Please run "hostname" in a command line.</div>
+    <div class="input-container ic1">
+      <input id="SSID" class="input" type="text" placeholder=" " />
+      <!-- <div class="cut"></div> -->
+      <label for="SSID" class="placeholder">SSID</label>
+    <div class="input-container ic2">
+      <input id="hostname" class="input" type="text" placeholder=" " />
+      <!-- <div class="cut"></div> -->
+      <label for="hostname" class="placeholder">Hostname</label>
+    </div>
+    <div class="result">
+      <div class="explanation" id="explanation"></div>
+      <div class="Credentials" id="SsidResult"></div>
+      <div class="Credentials" id="PasswordResult"></div>
+    </div>  
+    <button onclick="MainButton()" type="text" class="submit">
+      <p id="TextShow">Show</p>
+      <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </button>
+    </div>
+ 
+    <script src="main.js"></script>
+</body>
+
+</html>
